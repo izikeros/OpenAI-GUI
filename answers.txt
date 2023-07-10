@@ -1,0 +1,9 @@
+INFO:openai:message='Request to OpenAI API' method=post path=https://api.openai.com/v1/engines/text-davinci-003/completions
+INFO:openai:message='OpenAI API response' path=https://api.openai.com/v1/engines/text-davinci-003/completions processing_ms=None response_code=401
+INFO:openai:error_code=invalid_api_key error_message='Incorrect API key provided: sk-. You can find your API key at https://platform.openai.com/account/api-keys.' error_param=None error_type=invalid_request_error message='OpenAI API error received' stream_error=False
+INFO:openai:message='Request to OpenAI API' method=post path=https://azureopenai-assscus-eyfabric.openai.azure.com//openai/deployments/text-davinci-003/completions?api-version=2023-05-15
+INFO:openai:message='OpenAI API response' path=https://azureopenai-assscus-eyfabric.openai.azure.com//openai/deployments/text-davinci-003/completions?api-version=2023-05-15 processing_ms=3.0339 response_code=404
+INFO:openai:error_code=DeploymentNotFound error_message='The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again.' error_param=None error_type=None message='OpenAI API error received' stream_error=False
+INFO:openai:message='Request to OpenAI API' method=post path=https://azureopenai-assscus-eyfabric.openai.azure.com//openai/deployments/g/completions?api-version=2023-05-15
+INFO:openai:message='OpenAI API response' path=https://azureopenai-assscus-eyfabric.openai.azure.com//openai/deployments/g/completions?api-version=2023-05-15 processing_ms=2.7752 response_code=404
+INFO:openai:error_code=DeploymentNotFound error_message='The API deployment for this resource does not exist. If you created the deployment within the last 5 minutes, please wait a moment and try again.' error_param=None error_type=None message='OpenAI API error received' stream_error=False

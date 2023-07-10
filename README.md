@@ -42,6 +42,16 @@ python openaigui.py
 ```
 The GUI will then open in a new window. You can select the desired OpenAI model from the dropdown menu and enter your input in the text box. When you are ready, click the "Run" button to send your input to the model and view the results.
 
+# Troubleshooting
+On macOS when experiencing the problem with importing the `tkinter` module, try installing the `python-tk` package with Homebrew:
+```shell
+brew install python-tk
+```
+
+For other systems please find solutions in this StackOverflow answer:
+https://stackoverflow.com/a/76105219/3247880
+
+
 # Keyboard Shortcuts
 | Key Combo                 | Effect                                             |
 | ------------------------- | -------------------------------------------------- |
