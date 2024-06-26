@@ -1,19 +1,15 @@
 import logging
-import PySimpleGUI as sg
-import openai
 import os
 import sys
-import requests
 import urllib.request
-from PIL import Image
-from io import BytesIO
 
+import openai
+import PySimpleGUI as sg
 from dotenv import load_dotenv
+from PIL import Image
 
-from api_key import key
 from imgnsound import icon
 from text.prompt_framework import DAN_prompt
-
 
 logger = logging.getLogger()
 logging.basicConfig(filename="answers.txt", level=logging.INFO)
@@ -431,7 +427,7 @@ def main():
             window.close()
             window = make_window(theme_chosen)
             sg.user_settings_set_entry("-theme-", theme_chosen)
-            sg.popup(f"Chosen Theme: {str(theme_chosen)}", keep_on_top=True)
+            sg.popup(f"Chosen Theme: {theme_chosen!s}", keep_on_top=True)
 
         if event == "Edit Me":
             sg.execute_editor(__file__)
